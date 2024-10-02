@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* main styles */
+:root {
+  --font-family: "Manrope", sans-serif;
+  --second-family: "Montserrat", sans-serif;
+}
+
+body {
+  color: rgb(255, 255, 255);
+  background: #070707;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+}
+.page-backgound {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 1;
+}
+.contact-info__img-background {
+  width: 1667.23px;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  object-fit: cover;
+}
+
+@media (max-width: 1919px) {
+  .page-wrapper {
+    width: calc(360px + (1915 - 360) * ((100vw - 360px) / (1920 - 360)));
+  }
+  .contact-info__img-background {
+    width: calc(320px + (1667.23 - 320) * ((100vw - 360px) / (1920 - 360)));
+  }
+}
+
+@media (max-width: 1201px) {
+  .page-backgound {
+    width: 130%;
+  }
+}
+@media (max-width: 840px) {
+  .page-backgound {
+    width: 200%;
+  }
+}
+
+@media (max-width: 560px) {
+  .page-backgound {
+    width: 250%;
+  }
+}
+@media (max-width: 480px) {
+  .contact-info__img-background {
+    bottom: 50px;
+  }
+}
