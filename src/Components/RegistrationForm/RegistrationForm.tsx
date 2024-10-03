@@ -15,7 +15,7 @@ interface FormData {
   color: string;
 }
 
-const InputField = styled(TextField)(({ theme }) => ({
+const InputField = styled(TextField)(() => ({
   width: "455px",
   height: "56px",
   marginBottom: "20px",
@@ -100,7 +100,7 @@ const InputField = styled(TextField)(({ theme }) => ({
   },
 }));
 
-const TextArea = styled(TextField)(({ theme }) => ({
+const TextArea = styled(TextField)(() => ({
   width: "455px",
   marginBottom: "20px",
   "& label": {
@@ -155,7 +155,7 @@ const TextArea = styled(TextField)(({ theme }) => ({
   },
 }));
 
-const BpIcon = styled("span")(({ theme }) => ({
+const BpIcon = styled("span")(() => ({
   borderRadius: 3,
   width: 24,
   height: 24,
@@ -204,7 +204,7 @@ function BpCheckbox(props: CheckboxProps) {
   );
 }
 
-const FormPolicy = styled(Typography)(({ theme }) => ({
+const FormPolicy = styled(Typography)(() => ({
   fontSize: "14px",
   color: "rgba(255, 255, 255, 0.6)",
 }));
